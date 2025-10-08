@@ -6,114 +6,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Médica</title>
-    <link rel="stylesheet" href="../estilo.css">
+    <!-- <link rel="stylesheet" href="../estilo.css"> -->
+    <link rel="stylesheet" href="/teste.css">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="logo_header">
+    <div class="center">
+        <header class="header">
+            <a href="#">
                 <img src="/imagens/logotipo-de-clinica-medica-logotipo-de-cuidados-de-saude_733256-97.jpg"
-                    alt="imagem da recepção">
-            </div>
-            <nav class="menu">
-                <ul>
+                    alt="imagem da recepção" class="logo-img">
+            </a>
+            <nav>
+                <input type="checkbox" class="menu-btn hide" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+
+                <ul class="header-menu">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre a Clínica</a></li>
                     <li><a href="#horario">Horário</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main class="main">
-        <div class="content">
-            <!-- pagina inicial -->
-            <div id="inicio">
-                <h1>Página inicial</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iusto ad, ipsa omnis repellat facilis
-                    velit
-                    iure magni ipsam blanditiis dignissimos molestiae in quas. Nam sapiente doloribus autem minus
-                    veritatis.
-                </p>
-                <div class="image_container">
-                    <img class="content_image" src="/imagens/clinica-medica-na-pratica-diaria.png"
-                        alt="dia a dia da clínica">
+        <main class="main">
+            <div class="content">
+                <!-- pagina inicial -->
+                <div id="inicio">
+                    <h1>Página inicial</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iusto ad, ipsa omnis repellat
+                        facilis
+                        velit
+                        iure magni ipsam blanditiis dignissimos molestiae in quas. Nam sapiente doloribus autem minus
+                        veritatis.
+                    </p>
+                    <div class="image_container">
+                        <img class="content_image" src="/imagens/clinica-medica-na-pratica-diaria.png"
+                            alt="dia a dia da clínica">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet. Sunt deleniti nostrum, consequatur aperiam nisi
+                        ut inventore blanditiis ab dolorem odio consequuntur, quo expedita ullam
+                        laborum asperiores cumque recusandae non in p saepe.</p>
+                    <div class="image_container">
+                        <img class="content_image" src="/imagens/especialidades medicas.png" alt="dia a dia da clínica">
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet. Sunt deleniti nostrum, consequatur aperiam nisi
-                    ut inventore blanditiis ab dolorem odio consequuntur, quo expedita ullam
-                    laborum asperiores cumque recusandae non in p saepe.</p>
-                <div class="image_container">
-                    <img class="content_image" src="/imagens/especialidades medicas.png" alt="dia a dia da clínica">
+
+                <!-- sobre -->
+                <div id="sobre">
+                    <h1>Sobre a Clínica</h1>
+                    <p>Fundada em 2006, a clínica + saúde surgiu Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                        Ipsa,
+                        eum? Ipsum, repudiandae voluptatem quos non laborum numquam fuga molestias.</p>
+                    <div class="image_container">
+                        <img src="/imagens/equipe-medica-corredor.jpg" alt="equipe-medica-corredor">
+                    </div>
+                    <p>Nosso time está preparado e estruturado para atender Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Iste, quo?</p>
+                    <div class="image_container">
+                        <img src="/imagens/em-close-up-a-equipa-medica-esta-pronta-para-o-trabalho_23-2149152536.jpg"
+                            alt="em-close-up-a-equipa-medica-esta-pronta-para-o-trabalho_23-2149152536">
+                    </div>
+                </div>
+
+                <!-- horario -->
+                <div id="horario">
+                    <h1>Horário de Atendimento</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Serviços</th>
+                                <th>Segunda a Sexta</th>
+                                <th>Sábados</th>
+                                <th>Feriados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Clínico Geral</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                            </tr>
+                            <tr>
+                                <td>Psicologia</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                            </tr>
+                            <tr>
+                                <td>Pediatria</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <td>Oftomologia</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td> - </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- contato -->
+                <div id="contato">
+
+                    <h1>Contato</h1>
+                    <form class="contact_form" action="#" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div class="contact_info">
+                        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                        <p><strong>E-mail:</strong> contato@clinicamais.com.br</p>
+                        <p><strong>Endereço:</strong> Rua Saúde, 100 - Centro, São Paulo/SP</p>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- sobre -->
-            <div id="sobre">
-                <h1>Sobre a Clínica</h1>
-                <p>Fundada em 2006, a clínica + saúde surgiu Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Ipsa,
-                    eum? Ipsum, repudiandae voluptatem quos non laborum numquam fuga molestias.</p>
-                <div class="image_container">
-                    <img src="/imagens/equipe-medica-corredor.jpg" alt="equipe-medica-corredor">
-                </div>
-                <p>Nosso time está preparado e estruturado para atender Lorem ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Iste, quo?</p>
-                <div class="image_container">
-                    <img src="/imagens/em-close-up-a-equipa-medica-esta-pronta-para-o-trabalho_23-2149152536.jpg"
-                        alt="em-close-up-a-equipa-medica-esta-pronta-para-o-trabalho_23-2149152536">
-                </div>
-            </div>
-
-            <!-- horario -->
-            <div id="horario">
-                <h1>Horário de Atendimento</h1>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Serviços</th>
-                            <th>Segunda a Sexta</th>
-                            <th>Sábados</th>
-                            <th>Feriados</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Clínico Geral</td>
-                            <td>08h - 19h</td>
-                            <td>08h - 14h</td>
-                            <td>08h - 14h</td>
-                        </tr>
-                        <tr>
-                            <td>Psicologia</td>
-                            <td>08h - 19h</td>
-                            <td>08h - 14h</td>
-                            <td>08h - 14h</td>
-                        </tr>
-                        <tr>
-                            <td>Pediatria</td>
-                            <td>08h - 19h</td>
-                            <td>08h - 18h</td>
-                            <td> - </td>
-                        </tr>
-                        <tr>
-                            <td>Oftomologia</td>
-                            <td>08h - 19h</td>
-                            <td>08h - 18h</td>
-                            <td> - </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- contato -->
-             <div id="contato">
-
-             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
         <div class="footer">
